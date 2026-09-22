@@ -1,0 +1,25 @@
+/* 个人站点 · 全局样式（随便改） */
+:root{
+  --ink:#1c1c1e; --soft:#5b6068; --faint:#9aa0a8;
+  --line:rgba(20,22,28,.10); --accent:#4f7cf5;
+  --font:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",
+         "Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",sans-serif;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:#fff;color:var(--ink);font-family:var(--font);
+  font-size:16px;line-height:1.75;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:720px;margin:0 auto;padding:clamp(40px,10vh,120px) 24px 80px}
+h1{font-size:clamp(26px,5vw,38px);letter-spacing:-.02em;margin:0 0 6px}
+.sub{color:var(--soft);margin:0 0 40px;font-size:15px}
+h2{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);
+  margin:44px 0 14px;font-weight:600}
+.card{display:block;padding:18px 20px;border:1px solid var(--line);border-radius:14px;
+  margin-bottom:12px;transition:.16s;color:inherit}
+.card:hover{border-color:rgba(20,22,28,.22);box-shadow:0 6px 24px rgba(16,20,30,.07);
+  text-decoration:none;transform:translateY(-1px)}
+.card b{display:block;font-size:16.5px;margin-bottom:3px}
+.card span{color:var(--soft);font-size:13.5px}
+footer{margin-top:64px;padding-top:20px;border-top:1px solid var(--line);
+  color:var(--faint);font-size:13px}
